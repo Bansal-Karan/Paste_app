@@ -12,22 +12,22 @@ const router = createBrowserRouter([
     element: (<div>
       <Navbar />
       <Home />
-    </div>) 
-    },
-    {
-      path: "/pastes",
-      element: (<div>
-        <Navbar />
-        <Pastes />
-      </div>)
-    },
-    {
-      path: "/pastes/:id",
-      element: (<div>
-        <Navbar />
-        <ViewPaste /> 
-      </div>) ,
-    }
+    </div>)
+  },
+  {
+    path: "/pastes",
+    element: (<div>
+      <Navbar />
+      <Pastes />
+    </div>)
+  },
+  {
+    path: "/pastes/:id",
+    element: (<div>
+      <Navbar />
+      <ViewPaste />
+    </div>),
+  }
 ]);
 
 function App() {

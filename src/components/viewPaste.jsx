@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 
 const viewPaste = () => {
 
-  const {id} = useParams();
+  const { id } = useParams();
   const allPastes = useSelector(state => state.paste.pastes);
   const paste = allPastes.filter(p => p._id === id)[0];
 

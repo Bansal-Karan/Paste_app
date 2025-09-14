@@ -46,10 +46,7 @@ button {
 
   @apply duration-300 transition-colors rounded-xl hover:border hover:border-blue-600 hover:text-blue-500;
 }
-/* button:hover {
-  border-color: #646cff;
-  color: #575ee2;
-} */
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;

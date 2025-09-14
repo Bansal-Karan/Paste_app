@@ -1,7 +1,7 @@
 import React from 'react'
-import { useState,useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom';
-import { useDispatch,useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addPaste, updatePaste } from '../redux/pasteSlice';
 
 const Home = () => {
@@ -54,33 +54,33 @@ const Home = () => {
         }}
       >
         <div className='flex mt-3 gap-3'>
-        <input className='border-2 p-1 rounded-2xl pl-4 border-black bg-black'
-          type="text"
-          placeholder='enter title'
-          value={title}
-          onChange={(e) => setTitle(e.target.value)  
-          }
-          required
-          minLength={3}
-        />
-        <button type='submit' className='border-2 rounded-2xl hover:bg-blue-700'>
-          {
-            pasteId ? "Update Paste" : "Create Paste"
-          }
-        </button>
-      </div>
+          <input className='border-2 p-1 rounded-2xl pl-4 border-black bg-black'
+            type="text"
+            placeholder='enter title'
+            value={title}
+            onChange={(e) => setTitle(e.target.value)
+            }
+            required
+            minLength={3}
+          />
+          <button type='submit' className='border-2 rounded-2xl hover:bg-blue-700'>
+            {
+              pasteId ? "Update Paste" : "Create Paste"
+            }
+          </button>
+        </div>
 
-      <div className='flex mt-4'>
-        <textarea
-          className='border-2 rounded p-2 pl-4 border-black w-full h-90 bg-black'
-          type="text"
-          placeholder='write content here!'
-          value={content}
-          onChange={(e) => setContent(e.target.value)}
-          required
-          minLength={5}
-        />
-      </div>
+        <div className='flex mt-4'>
+          <textarea
+            className='border-2 rounded p-2 pl-4 border-black w-full h-90 bg-black'
+            type="text"
+            placeholder='write content here!'
+            value={content}
+            onChange={(e) => setContent(e.target.value)}
+            required
+            minLength={5}
+          />
+        </div>
       </form>
     </div>
   )
