@@ -1,12 +1,98 @@
-# React + Vite
+# 📋 Paste App --- React + Redux Pastebin Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview
 
-Currently, two official plugins are available:
+Paste App is a modern Pastebin-style web application built using
+**React.js** and **Redux** for state management.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+It allows users to create, view, and manage text snippets (pastes) in a
+clean and responsive interface.\
+The project demonstrates component-based architecture, global state
+management using Redux, and dynamic routing.
 
-## Expanding the ESLint configuration
+------------------------------------------------------------------------
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+-   📝 Create new paste
+-   📂 View all pastes
+-   🔍 View individual paste
+-   📤 Share paste via popup
+-   🧭 Navigation bar for easy routing
+-   ⚡ State management using Redux
+-   📱 Responsive UI
+
+------------------------------------------------------------------------
+
+## 🛠️ Tech Stack
+
+-   **Frontend:** React.js (Vite)
+-   **State Management:** Redux
+-   **Styling:** CSS
+-   **Build Tool:** Vite
+
+------------------------------------------------------------------------
+
+## 📂 Project Structure
+```
+Paste_app/ 
+├── src/ 
+│    ├── assets/ 
+│    ├── components/ 
+│    │     ├── Home.jsx 
+│    │     ├── Navbar.jsx 
+│    │     ├── Pastes.jsx 
+│    │     ├── SharePopup.jsx 
+│    │     └── viewPaste.jsx 
+│    ├── redux/ 
+│    ├── App.jsx 
+│    ├── App.css 
+│    ├── index.css 
+│    ├── main.jsx 
+│    └── store.js 
+├── .gitignore 
+├── package.json 
+└── README.md
+```
+------------------------------------------------------------------------
+
+## ⚙️ Installation & Setup
+
+1.  Clone the repository git clone
+    https://github.com/Bansal-Karan/Paste_app.git
+
+2.  Navigate into the project directory cd Paste_app
+
+3.  Install dependencies npm install
+
+4.  Start development server npm run dev
+
+5.  Open in browser http://localhost:5173
+
+------------------------------------------------------------------------
+
+## 📊 Key Concepts Demonstrated
+
+-   Component-based architecture
+-   Redux store configuration
+-   Global state management
+-   React routing
+-   Popup component handling
+-   Clean folder structure
+
+------------------------------------------------------------------------
+
+## 🔮 Future Improvements
+
+-   Add backend with database support
+-   Add authentication system
+-   Add paste expiration feature
+-   Add syntax highlighting
+-   Deploy online version
+
+------------------------------------------------------------------------
+
+## 👨‍💻 Author
+
+Karan Bansal\
+Computer Science Engineering Student
